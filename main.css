@@ -6,7 +6,7 @@
   padding: 0;
   box-sizing: border-box;
 
-  /* REMOVES ANIMATIONS FOR PEOPLE WHO'VE TURNED THEM OFF */
+  /* REMOVES ANIMATIONS FOR PEOPLE WHO HAVE TURNED THEM OFF */
   @media (preferes-reduced-motion: reduce) {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
@@ -28,6 +28,7 @@ ol {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 input,
@@ -47,3 +48,175 @@ p {
   font-weight: 400;
 }
 /*** GENEREAL RESET END ***/
+
+/*** VARIABLES  START ***/
+:root {
+  /* Colors */
+  --clr-dark-blue: #1f295a;
+  --clr-light-blue: #2b3879;
+  --clr-darkest-blue: #11183c;
+  --clr-accent-coral: lightcoral;
+  --clr-divider: rgba(255, 255, 255, 0.25);
+}
+/*** VARIABLES  END ***/
+
+/*** UTILITY CLASSES ***/
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/*** STYLING START ***/
+body {
+  min-height: 100vh;
+  background-color: var(--clr-dark-blue);
+  background-image: linear-gradient(
+    to right bottom,
+    var(--clr-light-blue),
+    var(--clr-darkest-blue)
+  );
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #fff;
+  line-height: 1.5;
+}
+
+#content-container {
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+/*** NAVBAR START  ***/
+/* TODO: Make hamburger at 480ish px */
+nav {
+  border-bottom: 1px solid var(--clr-divider);
+  height: 100px;
+  padding: 0 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  margin-right: 2rem;
+}
+
+.nav-list {
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+.nav-list li {
+  border-bottom: 2px solid transparent;
+  transition: border 0.2s;
+}
+.nav-list-selected {
+  font-weight: 600;
+}
+
+.nav-list li:hover {
+  border-bottom: 2px solid var(--clr-accent-coral);
+}
+/*** NAVBAR END ***/
+
+/*** MAIN START  ***/
+#hero {
+  padding: 4rem;
+  border-bottom: 1px solid var(--clr-divider);
+
+  display: flex;
+  flex-direction: row;
+}
+
+.hero-img-container {
+  width: 45%;
+  align-self: center;
+}
+
+.hero-img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.hero-info {
+  width: 55%;
+  padding: 4rem;
+  justify-content: space-between;
+}
+
+.hero-info-title {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 400;
+}
+
+.hero-info-text {
+  margin: 2rem 0;
+}
+
+.hero-info-text span {
+  z-index: 1;
+  font-weight: 600;
+  border-bottom: 2px solid lightcoral;
+}
+
+.hero-info-CTA {
+  align-self: flex-start;
+  border: 1px solid #fff;
+  padding: 1.25rem 3rem;
+
+  background: transparent;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.hero-info-CTA:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: rgb(17, 24, 60);
+}
+
+@media screen and (max-width: 50rem) {
+  #hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-info {
+    width: 100%;
+    padding: 4rem 0;
+  }
+
+  .hero-info-CTA {
+    margin-top: 2rem;
+    align-self: center;
+  }
+}
+/*** MAIN END  ***/
+
+/*** FOOTER START ***/
+footer {
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-name {
+  margin-right: 2rem;
+  font-weight: 600;
+}
+
+.footer-nav-link a {
+  align-items: center;
+}
+
+.footer-nav-link img {
+  width: 2rem;
+  margin: 0 0.5rem 0 1rem;
+}
+/*** FOOTER START ***/
+/*** STYLING END ***/
