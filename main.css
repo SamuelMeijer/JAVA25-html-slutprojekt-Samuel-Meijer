@@ -71,6 +71,21 @@ p {
   flex-direction: column;
 }
 
+.btn {
+  border: 1px solid #fff;
+  padding: 1.25rem 3rem;
+
+  background: transparent;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: rgb(17, 24, 60);
+}
+
 /*** STYLING START ***/
 body {
   min-height: 100vh;
@@ -91,7 +106,7 @@ body {
 }
 
 /*** NAVBAR START  ***/
-/* TODO: Make hamburger at 480ish px */
+/* TODO: Make hamburger at 530ish px */
 nav {
   border-bottom: 1px solid var(--clr-divider);
   height: 100px;
@@ -123,6 +138,7 @@ nav {
 /*** NAVBAR END ***/
 
 /*** MAIN START  ***/
+/* HERO START */
 #hero {
   padding: 4rem;
   border-bottom: 1px solid var(--clr-divider);
@@ -150,7 +166,6 @@ nav {
 
 .hero-info-title {
   font-size: clamp(2rem, 5vw, 4rem);
-  font-weight: 400;
 }
 
 .hero-info-text {
@@ -165,18 +180,6 @@ nav {
 
 .hero-info-CTA {
   align-self: flex-start;
-  border: 1px solid #fff;
-  padding: 1.25rem 3rem;
-
-  background: transparent;
-  text-transform: uppercase;
-  color: inherit;
-}
-
-.hero-info-CTA:hover {
-  cursor: pointer;
-  background-color: #fff;
-  color: rgb(17, 24, 60);
 }
 
 @media screen and (max-width: 50rem) {
@@ -184,6 +187,11 @@ nav {
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+
+  .hero-img-container {
+    width: 100%;
+    max-width: 300px;
   }
 
   .hero-info {
@@ -196,6 +204,51 @@ nav {
     align-self: center;
   }
 }
+/* HERO END */
+
+/* PROJECTS START */
+#projects {
+  padding: 4rem;
+  border-bottom: 1px solid var(--clr-divider);
+}
+
+.project-img-container {
+  width: 100%;
+  height: 200px;
+}
+
+/* TODO: PLACEHOLDER! -> Make better */
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0 0 25px 25px;
+}
+
+.project-info {
+  padding: 2rem 4rem;
+  text-align: center;
+}
+
+.project-info:nth-child(2) {
+  margin: 2rem 0;
+}
+
+.project-info-title {
+  font-size: clamp(1.5rem, 5vw, 3rem);
+}
+
+.project-info-text {
+  margin: 2rem 0;
+}
+
+@media screen and (max-width: 50rem) {
+  .project-info {
+    padding: 2rem;
+  }
+}
+
+/* PROJECTS END */
 /*** MAIN END  ***/
 
 /*** FOOTER START ***/
