@@ -4,6 +4,7 @@
 *::after {
   margin: 0;
   padding: 0;
+  border: 0;
   box-sizing: border-box;
 
   /* REMOVES ANIMATIONS FOR PEOPLE WHO HAVE TURNED THEM OFF */

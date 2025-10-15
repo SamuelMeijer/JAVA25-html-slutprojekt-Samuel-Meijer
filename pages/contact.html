@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../../assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+    <title>SM - Contact</title>
+  </head>
+
+  <body>
+    <div id="content-container">
+      <header>
+        <!-- TODO: FIX NAVBAR AS HAMBURGER? -->
+        <!-- TODO: FIX LINKS IN NAVBAR -->
+        <nav class="flex-row">
+          <img
+            class="nav-logo"
+            src="../../assets/images/SM-logo.png"
+            alt="SM"
+          />
+          <ul class="flex-row nav-list">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./about.html">About Me</a></li>
+            <li><a href="#">Projects</a></li>
+            <li class="nav-list-selected"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section id="contact-container" class="flex-col">
+          <div class="contact-text-container">
+            <h1 class="contact-text-title">
+              Interested in doing a project together?
+            </h1>
+            <p>
+              Please fill in the form, and I'll get back to you as soon as
+              possible!
+            </p>
+          </div>
+
+          <form id="contact-form" class="flex-col">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required />
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required />
+
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              rows="6"
+              cols="24"
+              placeholder="Write your message here..."
+              required
+            ></textarea>
+
+            <input class="btn" type="submit" value="Send" />
+          </form>
+        </section>
+      </main>
+
+      <footer class="flex-row">
+        <p class="footer-name">SAMUEL MEIJER</p>
+        <ul class="footer-nav flex-row">
+          <li class="footer-nav-link">
+            <a class="flex-row" href="#"
+              ><img
+                src="../../assets/images/github-logo.svg"
+                alt="Github logo"
+              />GitHub</a
+            >
+          </li>
+          <li class="footer-nav-link">
+            <a class="flex-row" href="#"
+              ><img
+                src="../../assets/images/linkedin-logo.svg"
+                alt="LinkedIn logo"
+              />LinkedIn</a
+            >
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>

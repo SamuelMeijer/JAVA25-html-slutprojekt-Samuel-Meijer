@@ -1,0 +1,38 @@
+/*** MAIN START  ***/
+/* CONTACT START */
+#contact-container {
+  padding: 4rem;
+  border-bottom: 1px solid var(--clr-divider);
+  text-align: center;
+
+  align-items: center;
+}
+
+.contact-text-title {
+  margin-bottom: 1rem;
+}
+
+#contact-form {
+  padding: 4rem;
+  max-width: 428px;
+
+  text-align: left;
+}
+
+label:not(:first-child),
+input[type="submit"] {
+  margin-top: 2rem;
+}
+
+input,
+textarea {
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+}
+
+input[type="submit"] {
+  border-radius: 0;
+  align-self: center;
+}
+/* CONTACT END */
+/*** MAIN END ***/
