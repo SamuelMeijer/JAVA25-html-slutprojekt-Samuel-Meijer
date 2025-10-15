@@ -25,6 +25,9 @@ picture {
 ul,
 ol {
   list-style: none;
+  /* REMOVING BOOTSTRAP STYLING */
+  padding: 0;
+  margin: 0;
 }
 
 a {
@@ -47,6 +50,8 @@ h5,
 h6,
 p {
   font-weight: 400;
+  /* REMOVING BOOTSTRAP STYLING */
+  margin: 0;
 }
 /*** GENEREAL RESET END ***/
 
@@ -112,7 +117,6 @@ body {
 }
 
 /*** NAVBAR START  ***/
-/* TODO: Make hamburger at 530ish px */
 nav {
   border-bottom: 1px solid var(--clr-divider);
   height: 100px;
@@ -126,7 +130,7 @@ nav {
 }
 
 .nav-list {
-  justify-content: flex-end;
+  align-items: center;
   gap: 2rem;
 }
 
@@ -140,6 +144,57 @@ nav {
 
 .nav-list li:hover {
   border-bottom: 2px solid var(--clr-accent-coral);
+}
+
+/* HAMBURGER AND STANDARD NAV TOGGLE */
+#standard-nav-container {
+  display: block;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+@media screen and (max-width: 33.125rem) {
+  #standard-nav-container {
+    display: none;
+  }
+
+  #hamburger-menu {
+    display: block;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+  }
+
+  .hamburger-menu-toggler {
+    background-color: var(--clr-light-blue);
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 0;
+  }
+
+  .hamburger-menu-toggler:hover {
+    background-color: #fff;
+    color: var(--clr-darkest-blue);
+  }
+
+  .hamburger-menu-background {
+    top: 0.5rem;
+    border-radius: 0;
+    border: 1px solid #fff;
+    background-color: var(--clr-light-blue);
+  }
+
+  nav {
+    border: 0;
+    height: auto;
+  }
+
+  .nav-logo {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
 }
 /*** NAVBAR END ***/
 
