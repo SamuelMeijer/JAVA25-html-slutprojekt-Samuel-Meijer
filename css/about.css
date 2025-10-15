@@ -10,6 +10,7 @@
 .about-img-container {
   width: 45%;
   align-self: center;
+  box-shadow: 4px 4px 6px 0 var(--clr-darkest-blue);
 }
 
 .about-img {
