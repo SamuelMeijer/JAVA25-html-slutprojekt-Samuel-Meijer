@@ -81,7 +81,7 @@ p {
   margin: 0 auto;
 }
 
-.btn {
+.styled-btn {
   border: 1px solid #fff;
   padding: 1.25rem 3rem;
 
@@ -90,7 +90,7 @@ p {
   color: inherit;
 }
 
-.btn:hover {
+.styled-btn:hover {
   cursor: pointer;
   background-color: #fff;
   color: rgb(17, 24, 60);
