@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../../assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/about.css" />
+    <title>SM - About</title>
+  </head>
+
+  <body>
+    <div id="content-container">
+      <header>
+        <!-- TODO: FIX NAVBAR AS HAMBURGER? -->
+        <!-- TODO: FIX LINKS IN NAVBAR -->
+        <nav class="flex-row">
+          <img
+            class="nav-logo"
+            src="../../assets/images/SM-logo.png"
+            alt="SM"
+          />
+          <ul class="flex-row nav-list">
+            <li><a href="../index.html">Home</a></li>
+            <li class="nav-list-selected"><a href="#">About Me</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section id="about-container" class="flex">
+          <div class="about-img-container">
+            <picture>
+              <source
+                srcset="../../assets/images/sm-profile-s.png"
+                media="(max-width: 50rem)"
+              />
+              <source
+                srcset="../../assets/images/sm-profile-m.png"
+                media="(max-width: 62.5rem)"
+              />
+              <img
+                class="about-img"
+                src="../../assets/images/sm-profile-l.png"
+                alt="Profile picture"
+              />
+            </picture>
+          </div>
+
+          <div class="about-info flex-col">
+            <h1 class="about-info-title">Welcome!</h1>
+            <p class="about-info-text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Perspiciatis, odio molestiae. Consequatur magnam beatae voluptas
+              alias nemo facilis ea iusto. <span>Samuel Meijer</span>.
+            </p>
+
+            <p class="about-info-text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Perspiciatis, odio molestiae. Consequatur magnam beatae voluptas
+              alias nemo facilis ea iusto. Deserunt, dolor.
+            </p>
+
+            <!-- TODO: ADD LINK TO CONTACT -->
+            <button class="btn about-info-CTA">
+              <a href="#">Contact Me</a>
+            </button>
+          </div>
+        </section>
+      </main>
+
+      <footer class="flex-row">
+        <p class="footer-name">SAMUEL MEIJER</p>
+        <ul class="footer-nav flex-row">
+          <li class="footer-nav-link">
+            <a class="flex-row" href="#"
+              ><img
+                src="../../assets/images/github-logo.svg"
+                alt="Github logo"
+              />GitHub</a
+            >
+          </li>
+          <li class="footer-nav-link">
+            <a class="flex-row" href="#"
+              ><img
+                src="../../assets/images/linkedin-logo.svg"
+                alt="LinkedIn logo"
+              />LinkedIn</a
+            >
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
