@@ -13,7 +13,7 @@
 }
 
 #contact-form {
-  padding: 4rem;
+  padding: 4rem 1.25rem;
   max-width: 428px;
 
   text-align: left;
@@ -26,7 +26,7 @@ input[type="submit"] {
 
 input,
 textarea {
-  padding: 0.25rem;
+  padding: 0.5rem;
   border-radius: 0.25rem;
 }
 

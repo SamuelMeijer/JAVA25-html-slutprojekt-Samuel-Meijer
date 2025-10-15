@@ -8,6 +8,14 @@
       href="../assets/images/favicon.png"
       type="image/x-icon"
     />
+    <!-- BOOTSTRAP START -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- BOOTSTRAP END -->
     <link rel="stylesheet" href="../css/general.css" />
     <link rel="stylesheet" href="../css/about.css" />
     <title>SM - About</title>
@@ -16,17 +24,56 @@
   <body>
     <div id="content-container">
       <header>
-        <!-- TODO: FIX NAVBAR AS HAMBURGER? -->
-        <!-- TODO: FIX LINKS IN NAVBAR -->
-        <nav class="flex-row">
-          <img class="nav-logo" src="../assets/images/SM-logo.png" alt="SM" />
-          <ul class="flex-row nav-list">
-            <li><a href="../index.html">Home</a></li>
-            <li class="nav-list-selected"><a href="#">About Me</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-          </ul>
-        </nav>
+        <div id="standard-nav-container">
+          <!-- TODO: FIX LINKS IN NAVBAR -->
+          <nav class="flex-row">
+            <img class="nav-logo" src="../assets/images/SM-logo.png" alt="SM" />
+            <ul class="flex-row nav-list">
+              <li><a href="../index.html">Home</a></li>
+              <li class="nav-list-selected"><a href="#">About Me</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- BOOTSTRAP COLLAPSE START -->
+        <div id="hamburger-menu">
+          <p class="d-inline-flex gap-1">
+            <button
+              class="btn btn-primary hamburger-menu-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseExample"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+            >
+              <img
+                src="../assets/images/hamburger-icon.svg"
+                alt="Hamburger Menu Icon"
+                class="hamburger-menu-icon"
+              />
+            </button>
+          </p>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body hamburger-menu-background">
+              <nav class="flex-col">
+                <img
+                  class="nav-logo"
+                  src="../assets/images/SM-logo.png"
+                  alt="SM"
+                />
+                <ul class="flex-col nav-list">
+                  <li><a href="../index.html">Home</a></li>
+                  <li class="nav-list-selected"><a href="#">About Me</a></li>
+                  <li><a href="#">Projects</a></li>
+                  <li><a href="./contact.html">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <!-- BOOTSTRAP COLLAPSE END -->
       </header>
 
       <main>
@@ -63,7 +110,6 @@
               alias nemo facilis ea iusto. Deserunt, dolor.
             </p>
 
-            <!-- TODO: Fix a-tag taking up too much space (100%width of parent) -->
             <a class="styled-btn about-info-CTA" href="../pages/contact.html">
               Contact
             </a>
@@ -89,5 +135,12 @@
         </ul>
       </footer>
     </div>
+
+    <!-- BOOTSTRAP SCRIPT -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
