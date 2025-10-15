@@ -52,7 +52,7 @@ Används minst följande:
 - En reset-fil.
 - CSS variabler.
 - CSS transition.
-- Alla sidor ska vara responsive
+- Alla sidor ska vara responsive (320+ px)
   - Layout ska anpassas.
   - Bilders storlek ska anpassas.
   - Bilder ska skalas med rätt proportioner.
