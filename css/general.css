@@ -173,6 +173,7 @@ nav {
     border: 0;
     border-radius: 0;
     background-color: var(--clr-light-blue);
+    box-shadow: 4px 4px 6px 0 var(--clr-darkest-blue);
   }
 
   .hamburger-menu-toggler:hover {
@@ -196,11 +197,16 @@ nav {
       brightness(102%) contrast(100%);
   }
 
+  #collapseExample {
+    /* REMOVING BOOTSTRAP STYLING */
+    transition: heigth 0s;
+  }
+
   .hamburger-menu-background {
-    top: 0.5rem;
     border-radius: 0;
     border: 1px solid #fff;
     background-color: var(--clr-light-blue);
+    box-shadow: 4px 4px 6px 0 var(--clr-darkest-blue);
   }
 
   nav {
