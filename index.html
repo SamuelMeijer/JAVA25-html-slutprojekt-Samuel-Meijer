@@ -118,57 +118,96 @@
 
         <!-- TODO: FIX PROJECT-SECTION, USING PLACEHOLDERS! -->
         <section id="projects">
-          <div class="project-one">
+          <div class="project-one project-content-container flex-col">
             <div class="project-img-container">
-              <img
-                class="project-img"
-                src="./assets/images/workout-project.png"
-                alt="Workout Project Logo"
-              />
+              <picture>
+                <source
+                  srcset="./assets/images/projects/project-one/fylo-hero-s.png"
+                  media="(max-width: 33.125rem)"
+                />
+                <source
+                  srcset="./assets/images/projects/project-one/fylo-hero-m.png"
+                  media="(max-width: 45rem)"
+                />
+
+                <img
+                  class="project-img"
+                  src="./assets/images/projects/project-one/fylo-hero-l.png"
+                  alt="Fylo project preview"
+                />
+              </picture>
             </div>
             <div class="project-info">
-              <h2 class="project-info-title">Workout Tracker</h2>
+              <h2 class="project-info-title">Fylo File Storage</h2>
               <p class="project-info-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
-                explicabo.
+                This project let's you store and share your most important files
+                in one secure location.
               </p>
-              <button class="styled-btn">Workout Tracker</button>
+              <button class="styled-btn project-btn">Go to project</button>
             </div>
           </div>
 
-          <div class="project-two">
+          <div class="project-two project-content-container flex-col">
             <div class="project-img-container">
-              <img
-                class="project-img"
-                src="./assets/images/workout-project.png"
-                alt="Workout Project Logo"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./assets/images/projects/project-two/clipboard-hero-s.png
+                  "
+                  media="(max-width: 33.125rem)"
+                />
+                <source
+                  srcset="
+                    ./assets/images/projects/project-two/clipboard-hero-m.png
+                  "
+                  media="(max-width: 45rem)"
+                />
+                <img
+                  class="project-img"
+                  src="./assets/images/projects/project-two/clipboard-hero.png"
+                  alt="Clipboard project preview"
+                />
+              </picture>
             </div>
             <div class="project-info">
-              <h2 class="project-info-title">Project 2</h2>
+              <h2 class="project-info-title">Clipboard Service</h2>
               <p class="project-info-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
-                explicabo.
+                This project let's you instantly access your clipboard on all
+                your devices.
               </p>
-              <button class="styled-btn">Project 2</button>
+              <button class="styled-btn project-btn">Go to project</button>
             </div>
           </div>
 
-          <div class="project-three">
+          <div class="project-three project-content-container flex-col">
             <div class="project-img-container">
-              <img
-                class="project-img"
-                src="./assets/images/workout-project.png"
-                alt="Workout Project Logo"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./assets/images/projects/project-three/sunnyside-hero-s.png
+                  "
+                  media="(max-width: 33.125rem)"
+                />
+                <source
+                  srcset="
+                    ./assets/images/projects/project-three/sunnyside-hero-m.png
+                  "
+                  media="(max-width: 45rem)"
+                />
+                <img
+                  class="project-img"
+                  src="./assets/images/projects/project-three/sunnyside-hero-l.png"
+                  alt="Sunnyside project preview"
+                />
+              </picture>
             </div>
             <div class="project-info">
-              <h2 class="project-info-title">Project 3</h2>
+              <h2 class="project-info-title">Sunnyside Agency</h2>
               <p class="project-info-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
-                explicabo.
+                This project is a webpage for one of the top creative agency
+                companies in the world.
               </p>
-              <button class="styled-btn">Project 3</button>
+              <button class="styled-btn project-btn">Go to project</button>
             </div>
           </div>
         </section>
