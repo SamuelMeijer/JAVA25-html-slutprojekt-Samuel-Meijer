@@ -54,6 +54,17 @@
 
 .section-img-container {
   align-items: center;
+  justify-content: flex-end;
+}
+
+.section-img-container:nth-child(even) {
+  justify-content: flex-start;
+}
+
+.section-img {
+  width: 100%;
+  height: auto;
+  box-shadow: 4px 4px 6px 0 var(--clr-darkest-blue);
 }
 
 .section-info-container {
