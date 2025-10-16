@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <!-- BOOTSTRAP START -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- BOOTSTRAP END -->
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/project-presentation.css" />
+    <title>SM - Sunnyside Project</title>
+  </head>
+
+  <body>
+    <div id="content-container">
+      <header>
+        <div id="standard-nav-container">
+          <nav class="flex-row">
+            <img class="nav-logo" src="../assets/images/SM-logo.png" alt="SM" />
+            <ul class="flex-row nav-list">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="./about.html">About Me</a></li>
+              <li class="nav-list-selected">
+                <a href="./projects.html">Projects</a>
+              </li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- BOOTSTRAP COLLAPSE START -->
+        <div id="hamburger-menu">
+          <p class="d-inline-flex gap-1">
+            <button
+              class="btn btn-primary hamburger-menu-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseExample"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+            >
+              <img
+                src="../assets/images/hamburger-icon.svg"
+                alt="Hamburger Menu Icon"
+                class="hamburger-menu-icon"
+              />
+            </button>
+          </p>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body hamburger-menu-background">
+              <nav class="flex-col">
+                <img
+                  class="nav-logo"
+                  src="../assets/images/SM-logo.png"
+                  alt="SM"
+                />
+                <ul class="flex-col nav-list">
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="./about.html">About Me</a></li>
+                  <li class="nav-list-selected">
+                    <a href="./projects.html">Projects</a>
+                  </li>
+                  <li><a href="./contact.html">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <!-- BOOTSTRAP COLLAPSE END -->
+      </header>
+
+      <main>
+        <section id="project">
+          <div class="project-content-container flex-col">
+            <div class="project-hero-container">
+              <picture>
+                <source
+                  srcset="
+                    ../assets/images/projects/project-three/sunnyside-hero-s.png
+                  "
+                  media="(max-width: 33.125rem)"
+                />
+                <source
+                  srcset="
+                    ../assets/images/projects/project-three/sunnyside-hero-m.png
+                  "
+                  media="(max-width: 45rem)"
+                />
+
+                <img
+                  class="project-hero"
+                  src="../assets/images/projects/project-three/sunnyside-hero-l.png"
+                  alt="Sunnyside hero"
+                />
+              </picture>
+            </div>
+
+            <div class="project-info flex-col">
+              <h1 class="project-info-title">Sunnyside Agency</h1>
+
+              <div class="project-gallery-container">
+                <div class="first-section section-container flex">
+                  <div class="section-img-container flex">
+                    <picture>
+                      <img
+                        class="section-img"
+                        src="../assets/images/projects/project-three/sunnyside-top.png"
+                        alt="Sunnyside info preview"
+                      />
+                    </picture>
+                  </div>
+
+                  <div class="section-info-container flex">
+                    <p class="project-info-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                      esse necessitatibus est quod nulla dolorem rem, totam at
+                      itaque rerum inventore repudiandae blanditiis tenetur
+                      sapiente fugit neque quaerat! Esse, fugiat!
+                    </p>
+                    <p class="project-info-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Illum, in cumque qui magnam odio quia soluta ipsa!
+                      Accusantium, voluptatum fugiat?
+                    </p>
+                  </div>
+                </div>
+                <div class="second-section section-container flex">
+                  <div class="section-info-container flex">
+                    <p class="project-info-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                      esse necessitatibus est quod nulla dolorem rem, totam at
+                      itaque rerum inventore repudiandae blanditiis tenetur
+                      sapiente fugit neque quaerat! Esse, fugiat!
+                    </p>
+                    <p class="project-info-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Illum, in cumque qui magnam odio quia soluta ipsa!
+                      Accusantium, voluptatum fugiat?
+                    </p>
+                  </div>
+                  <div class="section-img-container flex">
+                    <picture>
+                      <img
+                        class="section-img"
+                        src="../assets/images/projects/project-three/sunnyside-mid.png"
+                        alt="Sunnyside info preview"
+                      />
+                    </picture>
+                  </div>
+                </div>
+                <div class="third-section section-container flex">
+                  <div class="section-img-container flex">
+                    <picture>
+                      <img
+                        class="section-img"
+                        src="../assets/images/projects/project-three/sunnyside-bot.png"
+                        alt="Sunnyside info preview"
+                      />
+                    </picture>
+                  </div>
+
+                  <div class="section-info-container flex">
+                    <p class="project-info-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                      esse necessitatibus est quod nulla dolorem rem, totam at
+                      itaque rerum inventore repudiandae blanditiis tenetur
+                      sapiente fugit neque quaerat! Esse, fugiat!
+                    </p>
+                    <p class="project-info-text">
+                      All credit for project idea, design and assets goes to
+                      <a
+                        href="https://www.frontendmentor.io/challenges/agency-landing-page-7yVs3B6ef"
+                        >Frontend Mentor</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <a class="styled-btn project-btn" href="./projects.html">
+                Go to projects
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="flex-row">
+        <p class="footer-name">SAMUEL MEIJER</p>
+        <ul class="footer-nav flex-row">
+          <li class="footer-nav-link">
+            <a class="flex-row" href="#"
+              ><img src="../assets/images/github-logo.svg" alt="Github logo"
+            /></a>
+          </li>
+          <li class="footer-nav-link">
+            <a class="flex-row" href="#"
+              ><img
+                src="../assets/images/linkedin-logo.svg"
+                alt="LinkedIn logo"
+            /></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- BOOTSTRAP SCRIPT -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
