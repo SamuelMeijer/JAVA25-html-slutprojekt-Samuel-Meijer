@@ -34,5 +34,10 @@ input[type="submit"] {
   border-radius: 0;
   align-self: center;
 }
+@media screen and (max-width: 26.625rem) {
+  #contact-container {
+    padding: 4rem 1.75rem;
+  }
+}
 /* CONTACT END */
 /*** MAIN END ***/
