@@ -51,7 +51,6 @@
   }
 }
 
-/* TODO: CHECK REAL BREAKPOINTS WHEN TEXT IS CHANGED */
 @media screen and (max-width: 43.75rem) {
   .project-info {
     padding: 2rem 0;

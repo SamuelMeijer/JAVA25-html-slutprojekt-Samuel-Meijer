@@ -34,7 +34,7 @@
 }
 
 .about-info-text span {
-  z-index: 1;
+  display: inline-block;
   font-weight: 600;
   border-bottom: 2px solid lightcoral;
 }
